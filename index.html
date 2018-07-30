@@ -56,10 +56,13 @@
     <link rel="stylesheet" href="">
     <style type="text/css" media="screen">
     /* custom styles */
-    html,body {
+
+    html,
+    body {
         box-sizing: border-box;
         height: 100%;
     }
+
     body {
         background: white;
         color: black;
@@ -99,7 +102,7 @@
         text-decoration: none;
         color: black;
     }
-    
+
     header {
         text-align: left;
         flex: 1;
@@ -111,9 +114,8 @@
 
     @media screen and (min-width: 768px) {
         nav {
-            padding: 2vmax;        
+            padding: 2vmax;
         }
-
     }
 
     nav>ul>li {
@@ -134,8 +136,9 @@
     @media screen and (min-width: 768px) {
         main {
             flex: 3;
-        }    
+        }
     }
+
     .skills {
         display: flex;
         flex-direction: column;
@@ -143,13 +146,15 @@
         justify-content: flex-start;
         align-content: stretch;
     }
+
     @media screen and (min-width: 768px) {
         .skills {
             flex-direction: row;
             flex: 1;
         }
     }
-    .skills > div {
+
+    .skills>div {
         border: 1px solid black;
         order: 0;
         flex: 1;
@@ -159,16 +164,19 @@
         display: flex;
         justify-content: center;
     }
+
     @media screen and (min-width: 768px) {
-        .skills > div {
+        .skills>div {
             margin: 2vmax;
             align-self: stretch;
         }
     }
-    .skills > div > a {
+
+    .skills>div>a {
         align-self: center;
         text-align: center;
     }
+
     .works {
         display: flex;
         flex-direction: column;
@@ -178,53 +186,30 @@
         margin: 2.5vmax;
         flex: 1;
     }
+
     @media screen and (min-width: 768px) {
         .works {
             flex-direction: row;
             margin: 2vmax;
-        }        
+        }
     }
+
     .example {
         order: 0;
         flex: 1;
         align-self: auto;
         padding: 5vmax;
     }
+
     @media screen and (min-width: 768px) {
-        .example {
-        }
-    }
-    .example#item-01 {
-        background-image: url('https://source.unsplash.com/random');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .example#item-02 {
-        background-image: url('https://source.unsplash.com/random');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .example#item-03 {
-        background-image: url('https://source.unsplash.com/random');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .example#item-04 {
-        background-image: url('https://source.unsplash.com/random');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    @media screen and (max-width: 1600px) {
-        .example#item-04 {
-            display: none;
-        }         
-    }
-    @media screen and (max-width: 767px) {
-        .example:not(#item-01) {
-            display: none;
-        }         
+        .example {}
     }
 
+    .example {
+        background-image: url('https://source.unsplash.com/random');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     </style>
     <!-- External Scripts -->
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
@@ -251,16 +236,16 @@
             <div id="content"><a href="">Content</a></div>
         </section>
         <section class="works">
-            <div class="example" id="item-01"></div>
-            <div class="example" id="item-02"></div>
-            <div class="example" id="item-03"></div>
-            <div class="example" id="item-04"></div>
-<!--             <div class="example"><img src="https://source.unsplash.com/random"></div>
-            <div class="example"><img src="https://source.unsplash.com/random"></div>
-            <div class="example"><img src="https://source.unsplash.com/random"></div>
-            <div class="example"><img src="https://source.unsplash.com/random"></div>
-            <div class="example"><img src="https://source.unsplash.com/random"></div>
-            <div class="example"><img src="https://source.unsplash.com/random"></div> -->
+            <div class="example"></div>
+            <div class="example"></div>
+            <div class="example"></div>
+            <div class="example"></div>
+            <div class="example"></div>
+            <div class="example"></div>
+            <div class="example"></div>
+            <div class="example"></div>
+            <div class="example"></div>
+            <div class="example"></div>
         </section>
     </main>
     <script>
